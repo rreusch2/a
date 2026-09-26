@@ -1,0 +1,16 @@
+node_modules
+**/node_modules
+.git
+**/.git
+.expo
+**/.expo
+dist
+**/dist
+.cursor
+**/.cursor
+apps/mobile/ios
+apps/mobile/android
+*.log
+.env
+.env.*
+!.env.example

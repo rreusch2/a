@@ -1,0 +1,16 @@
+{
+  "name": "agents",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev -w @agents/server",
+    "dev:worker": "npm run worker -w @agents/server",
+    "typecheck": "npm run typecheck -w @agents/shared && npm run typecheck -w @agents/server && npm run typecheck -w @agents/mobile",
+    "test": "npm run test -w @agents/shared && npm run test -w @agents/server",
+    "build:server": "npm run build -w @agents/shared && npm run build -w @agents/server"
+  }
+}
